@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Daniel Munoz Tattoos: West Michigan-based tattoo artist blending personal stories with timeless ink.">
+    <title>Daniel Munoz Tattoos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Daniel Munoz</h1>
+            <p class="tagline">Crafting Personal Stories in Ink, Inspired by West Michigan’s Warmth</p>
+            <a href="#booking" class="cta">Book Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Daniel</h2>
+        <p>
+            Born and raised in Holland, Michigan, Daniel Munoz brings 4 years of tattooing expertise 
+            to the table. Growing up around the Great Lakes, he infuses his art with a laid-back, 
+            honest energy. Inspired by the mellow beats of Mac Miller and the authenticity of Midwest life, 
+            Daniel works closely with clients—just good conversation, respect, and ink that tells your story.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <p class="section-intro">A curated selection of Daniel’s recent work. Click on any image to see it up close.</p>
+        <div class="gallery-grid">
+            <a href="tattoo1.jpg" class="lightbox-trigger"><img src="tattoo1.jpg" alt="Tattoo 1"></a>
+            <a href="tattoo2.jpg" class="lightbox-trigger"><img src="tattoo2.jpg" alt="Tattoo 2"></a>
+            <a href="tattoo3.jpg" class="lightbox-trigger"><img src="tattoo3.jpg" alt="Tattoo 3"></a>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Book Your Session</h2>
+        <p>Choose a time that works for you, and let’s start planning your next piece of art!</p>
+        <div class="calendly-container">
+            <iframe src="https://calendly.com/danielpainter19?embed_domain=yourdomain.com&embed_type=Inline" 
+                    width="100%" height="600" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Daniel Munoz Tattoos | West Michigan | <a href="#home">Back to Top</a></p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" aria-hidden="true">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <img src="" alt="Expanded Tattoo Image" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
